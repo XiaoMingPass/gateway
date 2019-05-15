@@ -42,12 +42,10 @@ public class ApiInterface implements Serializable {
 			sb.append(":");
 			sb.append(port);
 		}
+		sb.append("/");
 		if (targetUrl != null) {
-			sb.append("/");
 			sb.append(targetUrl);
-		} else {
-			sb.append("/");
-		}
+		} 
 		this.url = sb.toString();
 		return url;
 	}
